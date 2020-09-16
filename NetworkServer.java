@@ -18,7 +18,7 @@ public class NetworkServer
 			DataInputStream in = new DataInputStream(new BufferedInputStream(client.getInputStream()));
 			String str = in.readUTF();
 			System.out.printf("%s said %s",client.getRemoteSocketAddress(),str);
-			out.writeUTF("Hello, thank you for trying out networking! the flag is: zetactf{y0u_l34RnEd_t0_n3Tw0rk_1337}");
+			out.writeUTF("Hello, thank you for trying out networking! the flag is: [redacted]");
 			out.flush();
 			out.close();
 			in.close();
